@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern in JS</title>
+</head>
+<body>
+    <h1>Reverse Triangle Pattern in JS</h1>
+    <script>
+        for (let d = 0; d < 8; d++) {
+            for (let y = 0; y < 8 - d; y++) {
+                document.write("&nbsp" + "&nbsp");                
+            } 
+            for (let s = 0; s < d; s++) {
+                document.write(s);                
+            }
+            document.write("*");
+            document.write('<br>')           
+        }
+    </script>
+</body>
+</html>

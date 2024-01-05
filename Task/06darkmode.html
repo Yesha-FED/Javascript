@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .bu{
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="y">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, illum unde? Hic, asperiores eaque consectetur
+            ab laudantium quidem similique quisquam.</h1>
+        <button class="bu" id="d" onclick="dark()">Dark Mode</button>
+    </div>
+
+
+    <script>
+        function dark() {
+            if (document.body.style.backgroundColor!== "black") {
+
+                document.body.style.backgroundColor = "black";
+                document.getElementById("y").style.color = "white";
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.getElementById("y").style.color = "black";
+            }
+        }
+    </script>
+</body>
+
+</html>

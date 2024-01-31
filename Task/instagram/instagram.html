@@ -17,13 +17,13 @@
             <img src="../../Images/instagramlogo.svg" alt="" class="logo">
         </div>
         <div class="userid">
-            <p id="no" class="un" oninput="transform()">Phone Number, Username, or Email</p>
-            <input type="text" name="" id="data" class="user" placeholder="" oninput="transform()">
+            <p id="no" class="un" oninput="handletransform()">Phone Number, Username, or Email</p>
+            <input type="text" name="" id="data" class="user" placeholder="" oninput="handletransform()">
         </div>
         <div class="userpass">
-            <p id="no" class="pas" oninput="transform()">Password</p>
-            <input type="password" name="" id="word"  class="pass" placeholder="" oninput="transform()" onclick="show()">
-            <span id="show" onclick="validation()">Show</span>
+            <p id="no" class="pas" oninput="handletransform()">Password</p>
+            <input type="password" name="" id="word"  class="pass" placeholder="" oninput="handletransform()" onclick="show()">
+            <span id="show" onclick="handlevalidation()">Show</span>
         </div>
         <div class="bu">
             <button class="bu-2">Log In</button>
@@ -68,7 +68,7 @@
     <!-- script starts  -->
 
     <script>
-        function validation() {
+        function handlevalidation() {
             let x = document.getElementById("word");
             if (x.type === "password") {
                 x.type = "text";
@@ -78,21 +78,21 @@
                 document.getElementById("show").innerText = "Show";
                 x.type = "password";
             }
-        }
+        };
 
         function handletransform(){
             if(document.getElementById("word").value!=""){
                 document.getElementById("no").style.fontSize="5px";
                 document.getElementById("no").style.transition="0.2s";
-                document.getElementById("no").style.top = "10px";
+                document.getElementById("no").style.top = "5px";
                 document.getElementById("show").style.display = "block";
             }
             else{
                 document.getElementById("no").style.fontSize="12px";
                 document.getElementById("show").style.display = "none";
-                document.getElementById("no").style.top = "200px";
+                document.getElementById("no").style.top = "146px";
             }
-        }
+        };
     </script>
 </body>
 
